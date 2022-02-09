@@ -76,7 +76,7 @@ input[type='checkbox'] {
 
 :checked,
 :checked ~ section {
-  transition: color 2s, background 2s;
+  transition: background 2s;
   color: var(--text-color-dark);
   background: var(--background-element-dark);
 }
