@@ -1,0 +1,38 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125em;
+  color: black;
+  background: lightgrey;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  background: white;
+  padding: 2em;
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+  width: min(800px, 80%);
+  /* min gets the smallest value, so when the screen gets smaller 70% will be smaller
+  then 800px, so the width will be set to 70% */
+}
+
+section h1 {
+  color: #ee6352;
+}
+
+section img {
+  height: min(40vw, 400px);
+  max-width: 98%;
+}
+
+p {
+  font-size: clamp(0.5rem, 1rem, 3rem);
+  /* clamp(minimum, preferred, maximum); */
+}
