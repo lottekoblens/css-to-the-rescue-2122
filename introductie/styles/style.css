@@ -1,5 +1,5 @@
 :root {
-  --background-color: #b81c4b;
+  --background-color: #065e61;
   --background-element-light: white;
   --background-element-dark: black;
   --heading-color: #b81c4b;
@@ -32,6 +32,7 @@ section {
   padding: 2em;
   box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
   width: min(800px, 80%);
+  transition: background 2s;
   /* min gets the smallest value, so when the screen gets smaller 70% will be smaller
   then 800px, so the width will be set to 70% */
 }
@@ -48,6 +49,7 @@ section img {
 }
 
 p {
+  transition: color 2s;
   font-size: clamp(0.8rem, 2.5vw, 1.2rem);
   /* clamp(minimum, preferred, maximum); */
 }
@@ -74,6 +76,7 @@ input[type='checkbox'] {
 
 :checked,
 :checked ~ section {
+  transition: color 2s, background 2s;
   color: var(--text-color-dark);
   background: var(--background-element-dark);
 }
