@@ -1,7 +1,13 @@
 :root {
-  --background-color: rgb(233, 240, 250);
-  --heading-color: #ee6352;
-  --text-color: black;
+  --background-color: #b81c4b;
+  --background-element-light: white;
+  --background-element-dark: black;
+  --heading-color: #b81c4b;
+  --text-color-light: black;
+  --text-color-dark: white;
+  --gradient-style: radial-gradient(circle, #f6ff1c, #ffdc00, #ffb800, #ff951a);
+  --gradient-size: 8px;
+  --gradient-shadow: #ffb800;
 }
 
 body {
@@ -11,7 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 1.125em;
-  color: var(--text-color);
+  color: var(--text-color-light);
   background: var(--background-color, lightgrey);
   /* fallback, when --background-color is not found, set background color to lightgrey */
 }
@@ -46,58 +52,28 @@ p {
   /* clamp(minimum, preferred, maximum); */
 }
 
+label {
+  text-indent: -9999px;
+  background-image: url('../public/images/moon.png');
+}
+
 input[type='checkbox'] {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  z-index: 100;
-  left: 11%;
-  opacity: 0;
-}
-/* input[type='checkbox'] {
-  height: 0;
-  width: 0;
-  visibility: hidden;
-} */
-
-div {
-  cursor: pointer;
-  /* text-indent: -9999px; */
-  width: 100px;
-  height: 50px;
-  background: grey;
-  display: block;
-  border-radius: 100px;
-  position: relative;
-}
-
-div:after {
-  content: '';
+  -webkit-appearance: none;
+  outline: 0;
   position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 50px;
-  height: 40px;
-  background: #fff;
-  border-radius: 90px;
-  transition: 0.3s;
-}
-
-input:checked + div {
-  background: #bada55;
-}
-
-input:checked + div:after {
-  left: calc(100% - 5px);
-  transform: translateX(-100%);
-}
-
-div:active:after {
-  width: 130px;
+  z-index: 2;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-image: var(--gradient-style);
+  box-shadow: 0 0 14px var(--gradient-size) var(--gradient-shadow);
+  cursor: pointer;
 }
 
 :checked,
 :checked ~ section {
-  color: white;
-  background: #121212;
+  color: var(--text-color-dark);
+  background: var(--background-element-dark);
 }
