@@ -46,7 +46,6 @@ section h1 {
 section img {
   height: max(20vw, 200px);
   /* max gets the biggets value */
-  /* width: min(30vw, 300px); */
 }
 
 p,
