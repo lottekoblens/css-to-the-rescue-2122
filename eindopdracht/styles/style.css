@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
   color: white;
 }
 
@@ -8,12 +9,14 @@ main {
   width: 100vw;
   height: 100vh;
   background: rgb(2, 0, 36);
-  background: linear-gradient(
+  background-position: center center;
+  background-image: url('../images/brug.jpg');
+  /* background: linear-gradient(
     180deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(9, 9, 121, 1) 60%,
     rgba(255, 255, 255, 1) 100%
-  );
+  ); */
   background-repeat: no-repeat;
   background-size: cover;
 }
