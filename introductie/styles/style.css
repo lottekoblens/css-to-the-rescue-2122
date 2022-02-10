@@ -31,7 +31,7 @@ section {
   background: white;
   padding: 2em;
   box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
-  width: min(800px, 80%);
+  width: min(600px, 80%);
   transition: background 2s;
   /* min gets the smallest value, so when the screen gets smaller 70% will be smaller
   then 800px, so the width will be set to 70% */
@@ -44,11 +44,13 @@ section h1 {
 }
 
 section img {
-  height: min(40vw, 400px);
-  width: min(30vw, 300px);
+  height: max(20vw, 200px);
+  /* max gets the biggets value */
+  /* width: min(30vw, 300px); */
 }
 
-p {
+p,
+ul {
   transition: color 2s;
   font-size: clamp(0.8rem, 2.5vw, 1.2rem);
   /* clamp(minimum, preferred, maximum); */
