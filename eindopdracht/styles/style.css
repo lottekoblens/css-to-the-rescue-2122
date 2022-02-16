@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: 100vh;
   color: white;
 }
 
@@ -13,40 +13,113 @@ input[type='checkbox'] {
 main {
   width: 100vw;
   height: 100vh;
-  background: rgb(2, 0, 36);
-  background-position: center center;
-  background-image: url('../images/brug.jpg');
+  background: linear-gradient(
+    to bottom,
+    #010a10 30%,
+    #0b1959 80%,
+    #2f1107 100%
+  );
+  /* background-position: center center;
+  background-image: url('../images/brug.jpg'); */
   /* background: linear-gradient(
     180deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(9, 9, 121, 1) 60%,
     rgba(255, 255, 255, 1) 100%
   ); */
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
 }
 
+/* skyline */
+
 main > div:nth-of-type(1) {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: scale(1);
+  position: absolute;
+  width: 20vw;
+  height: 40vh;
+  border-radius: 0.5em 0.5em 0 0;
+  background: #331487;
+  bottom: 0;
+  left: 0%;
+}
+
+main > div:nth-of-type(1)::after {
+  content: '';
+  position: absolute;
+  background-image: url('../images/door.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: min(2em, 40%);
+  height: min(5em, 30%);
+  bottom: 0;
+  left: 1vw;
 }
 
 main > div:nth-of-type(2) {
-  position: relative;
+  position: absolute;
+  width: 30vw;
+  height: 55vh;
+  border-radius: 0.5em 0.5em 0 0;
+  background: #1e0957;
+  clip-path: polygon(46% 0%, 23% 21%, 23% 100%, 70% 100%, 70% 20%);
+  bottom: 0;
+  left: 10%;
+}
+
+main > div:nth-of-type(2)::after {
+  content: '';
+  position: absolute;
+  background-image: url('../images/door.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: min(2em, 40%);
+  height: min(5em, 30%);
+  bottom: 0;
+  left: 8vw;
+}
+
+main > div:nth-of-type(3) {
+  position: absolute;
+  width: 15vw;
+  height: 46vh;
+  border-radius: 0.5em 0.5em 0 0;
+  background: #270d6e;
+  bottom: 0;
+  left: 31vw;
+}
+
+main > div:nth-of-type(3)::after {
+  content: '';
+  position: absolute;
+  background-image: url('../images/door.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: min(2em, 40%);
+  height: min(5em, 30%);
+  bottom: 0;
+  left: 1vw;
+}
+
+/* vuurwerk 1 en 2 */
+main > div:nth-of-type(7) {
+  position: absolute;
   left: 50%;
-  top: 20%;
-  transform: scale(1.5);
+  top: 10%;
+  transform: scale(0.8);
+}
+
+main > div:nth-of-type(8) {
+  position: absolute;
+  left: 70%;
+  top: 5%;
+  transform: scale(1.3);
 }
 
 div > div {
   position: absolute;
-  left: 200px;
-  top: 10px;
-  width: 4px;
-  height: 80px;
-  transform-origin: 50% 100%;
+  width: 0.1em;
+  height: 7em;
+  transform-origin: 0% 60%;
   overflow: hidden;
 }
 
@@ -87,8 +160,8 @@ div > div:nth-child(12) {
   transform: rotate(330deg) translateY(-15px);
 }
 
-input[type='checkbox']:checked ~ div:nth-of-type(1) > div:before,
-input[type='checkbox']:checked ~ div:nth-of-type(2) > div:before {
+input[type='checkbox']:checked ~ div:nth-of-type(7) > div:before,
+input[type='checkbox']:checked ~ div:nth-of-type(8) > div:before {
   content: '';
   position: absolute;
   left: 0;
@@ -99,8 +172,9 @@ input[type='checkbox']:checked ~ div:nth-of-type(2) > div:before {
   animation: explosion 2s ease-in-out infinite;
 }
 
-input[type='checkbox']:checked ~ div:nth-of-type(2) > div:before {
+input[type='checkbox']:checked ~ div:nth-of-type(8) > div:before {
   background-color: #e86fdc;
+  animation: explosion 2s 0.7s ease-in-out infinite;
 }
 
 @keyframes explosion {
