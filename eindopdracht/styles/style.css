@@ -186,6 +186,7 @@ input[type='checkbox']:checked ~ div:nth-of-type(4) > div:before {
   height: 5vmin;
   background-color: #f5cf52;
   animation: explosion 2s ease-in-out infinite;
+  animation-delay: 2s;
 }
 
 input[type='checkbox']:checked ~ div:nth-of-type(4) > div:before {
@@ -210,7 +211,7 @@ input[type='checkbox']:checked ~ div:nth-of-type(5) {
 main > div:nth-of-type(5) {
   position: absolute;
   top: 90vmin;
-  left: 59.5vmin;
+  left: 59vmin;
   opacity: 0;
   /* clip-path: polygon(50% 0, 0% 25%, 0% 100%, 100% 100%, 100% 25%); */
   clip-path: polygon(
