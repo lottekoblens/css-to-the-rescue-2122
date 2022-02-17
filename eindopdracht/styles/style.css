@@ -114,7 +114,7 @@ main > div:nth-of-type(3) {
 
 main > div:nth-of-type(4) {
   position: absolute;
-  left: 90vmin;
+  left: 30vmin;
   top: 5vmin;
   transform: scale(1.3);
 }
@@ -200,5 +200,51 @@ input[type='checkbox']:checked ~ div:nth-of-type(4) > div:before {
   33%,
   100% {
     top: -50%;
+  }
+}
+
+input[type='checkbox']:checked ~ div:nth-of-type(5) {
+  animation: pijl 2s infinite;
+}
+
+main > div:nth-of-type(5) {
+  position: absolute;
+  top: 90vmin;
+  left: 59.5vmin;
+  opacity: 0;
+  /* clip-path: polygon(50% 0, 0% 25%, 0% 100%, 100% 100%, 100% 25%); */
+  clip-path: polygon(
+    48% 0%,
+    23% 17%,
+    23% 65%,
+    40% 65%,
+    40% 100%,
+    54% 100%,
+    54% 65%,
+    71% 65%,
+    71% 17%
+  );
+
+  width: 3vmin;
+  height: 5vmin;
+  /* border-radius: 100%; */
+  background: repeating-linear-gradient(
+    45deg,
+    #f5cf52,
+    #e86fdc 10px,
+    #f5cf52 10px
+  );
+  transform: scale(1.3);
+  opacity: 0;
+  overflow: hidden;
+}
+
+@keyframes pijl {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, -70vmin);
   }
 }
