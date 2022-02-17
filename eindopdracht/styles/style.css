@@ -19,67 +19,54 @@ main {
     #0b1959 80%,
     #2f1107 100%
   );
-  /* background-position: center center;
-  background-image: url('../images/brug.jpg'); */
-  /* background: linear-gradient(
-    180deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 60%,
-    rgba(255, 255, 255, 1) 100%
-  ); */
-  /* background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 /* houses */
 
 /* huis */
-main > div:nth-of-type(1) {
+main > div:nth-of-type(2) {
   position: absolute;
   bottom: 0;
   left: 10vmin;
   height: 45vmin;
   width: 35vmin;
-  background: #fff;
+  background: rgb(65, 30, 110);
   clip-path: polygon(0 50%, 50% 0, 100% 50%, 100% 100%, 0 100%, 0 50%);
-  border-top: 10px solid blue;
-  overflow: hidden;
 }
 
 /* schoorsteen */
-main > div:nth-of-type(1)::before {
+main > div:nth-of-type(1) {
   content: '';
   position: absolute;
-  top: 0px;
-  left: 15px;
-  height: 70px;
-  width: 30px;
-  background: blue;
-  z-index: 1;
+  bottom: 27.5vmin;
+  left: 14vmin;
+  height: 10vmin;
+  width: 5vmin;
+  background: rgb(137, 66, 196);
   border-top: 7px solid rgba(0, 0, 0, 0.3);
 }
 
 /* raam */
-main > div:nth-of-type(1) > div:nth-of-type(1) {
-  top: 40vh;
-  left: 25px;
-  height: 80px;
-  width: 70px;
-  background: #96ebff;
+main > div:nth-of-type(2) > div:nth-of-type(1) {
+  top: 25vmin;
+  left: 5vmin;
+  height: 10vmin;
+  width: 10vmin;
+  background: #ecba14;
   z-index: 3;
-  border-top: 7px solid blue;
+  border-top: 1vmin solid rgb(137, 66, 196);
 }
 
 /* ruiten raam */
-main > div:nth-of-type(1) > div:nth-of-type(1)::before,
-main > div:nth-of-type(1) > div:nth-of-type(1)::after {
+main > div:nth-of-type(2) > div:nth-of-type(1)::before,
+main > div:nth-of-type(2) > div:nth-of-type(1)::after {
   content: '';
   position: absolute;
-  background: silver;
+  background: rgb(65, 30, 110);
 }
 
 /* ruit rechts */
-main > div:nth-of-type(1) > div:nth-of-type(1)::before {
+main > div:nth-of-type(2) > div:nth-of-type(1)::before {
   top: 0;
   left: 50%;
   height: 100%;
@@ -87,121 +74,121 @@ main > div:nth-of-type(1) > div:nth-of-type(1)::before {
 }
 
 /* ruit onder */
-main > div:nth-of-type(1) > div:nth-of-type(1)::after {
+main > div:nth-of-type(2) > div:nth-of-type(1)::after {
   top: 50%;
   height: 1px;
   width: 100%;
 }
 
 /* deur */
-main > div:nth-of-type(1) > div:nth-of-type(2) {
+main > div:nth-of-type(2) > div:nth-of-type(2) {
   bottom: 0;
   left: 20vmin;
   height: 20vmin;
   width: 10vmin;
-  background: blue;
+  background: rgb(137, 66, 196);
   z-index: 3;
   overflow: hidden;
 }
 
 /* deurklink */
-main > div:nth-of-type(1) > div:nth-of-type(2)::before {
+main > div:nth-of-type(2) > div:nth-of-type(2)::before {
   content: '';
   position: absolute;
-  top: 50%;
-  right: 10px;
-  height: 7px;
-  width: 7px;
+  top: 10vmin;
+  right: 2vmin;
+  height: 1vmin;
+  width: 1vmin;
   border-radius: 50%;
-  border: 1px solid #fff;
-  background: #96ebff;
+  border: 1px solid rgb(65, 30, 110);
+  background: #d596ff;
 }
 
 /* vuurwerk 1 en 2 */
-main > div:nth-of-type(2) {
+main > div:nth-of-type(3) {
   position: absolute;
-  left: 50%;
-  top: 10%;
+  left: 60vmin;
+  top: 15vmin;
   transform: scale(0.8);
 }
 
-main > div:nth-of-type(3) {
+main > div:nth-of-type(4) {
   position: absolute;
-  left: 70%;
-  top: 5%;
+  left: 90vmin;
+  top: 5vmin;
   transform: scale(1.3);
 }
 
 div > div {
   position: absolute;
-  width: 0.1em;
-  height: 7em;
+  width: 0.3vmin;
+  height: 10vmin;
   transform-origin: 0% 60%;
   overflow: hidden;
 }
 
-main > div:nth-of-type(2) > div:nth-child(1),
-main > div:nth-of-type(3) > div:nth-child(1) {
+main > div:nth-of-type(3) > div:nth-child(1),
+main > div:nth-of-type(4) > div:nth-child(1) {
   transform: rotate(0deg) translateY(-15px);
 }
-main > div:nth-of-type(2) > div:nth-child(2),
-main > div:nth-of-type(3) > div:nth-child(2) {
+main > div:nth-of-type(3) > div:nth-child(2),
+main > div:nth-of-type(4) > div:nth-child(2) {
   transform: rotate(30deg) translateY(-15px);
 }
-main > div:nth-of-type(2) > div:nth-child(3),
-main > div:nth-of-type(3) > div:nth-child(3) {
+main > div:nth-of-type(3) > div:nth-child(3),
+main > div:nth-of-type(4) > div:nth-child(3) {
   transform: rotate(60deg) translateY(-15px);
 }
-main > div:nth-of-type(2) > div:nth-child(4),
-main > div:nth-of-type(3) > div:nth-child(4) {
+main > div:nth-of-type(3) > div:nth-child(4),
+main > div:nth-of-type(4) > div:nth-child(4) {
   transform: rotate(90deg) translateY(-15px);
 }
-main > div:nth-of-type(2) > div:nth-child(5),
-main > div:nth-of-type(3) > div:nth-child(5) {
+main > div:nth-of-type(3) > div:nth-child(5),
+main > div:nth-of-type(4) > div:nth-child(5) {
   transform: rotate(120deg) translateY(-15px);
 }
-main > div:nth-of-type(2) > div:nth-child(6),
-main > div:nth-of-type(3) > div:nth-child(6) {
+main > div:nth-of-type(3) > div:nth-child(6),
+main > div:nth-of-type(4) > div:nth-child(6) {
   transform: rotate(150deg) translateY(-15px);
 }
-main > div:nth-of-type(2) > div:nth-child(7),
-main > div:nth-of-type(3) > div:nth-child(7) {
+main > div:nth-of-type(3) > div:nth-child(7),
+main > div:nth-of-type(4) > div:nth-child(7) {
   transform: rotate(180deg) translateY(-15px);
 }
-main > div:nth-of-type(2) > div:nth-child(8),
-main > div:nth-of-type(3) > div:nth-child(8) {
+main > div:nth-of-type(3) > div:nth-child(8),
+main > div:nth-of-type(4) > div:nth-child(8) {
   transform: rotate(210deg) translateY(-15px);
 }
-main > div:nth-of-type(2) > div:nth-child(9),
-main > div:nth-of-type(3) > div:nth-child(9) {
+main > div:nth-of-type(3) > div:nth-child(9),
+main > div:nth-of-type(4) > div:nth-child(9) {
   transform: rotate(240deg) translateY(-15px);
 }
-main > div:nth-of-type(2) > div:nth-child(10),
-main > div:nth-of-type(3) > div:nth-child(10) {
+main > div:nth-of-type(3) > div:nth-child(10),
+main > div:nth-of-type(4) > div:nth-child(10) {
   transform: rotate(270deg) translateY(-15px);
 }
-main > div:nth-of-type(2) > div:nth-child(11),
-main > div:nth-of-type(3) > div:nth-child(11) {
+main > div:nth-of-type(3) > div:nth-child(11),
+main > div:nth-of-type(4) > div:nth-child(11) {
   transform: rotate(300deg) translateY(-15px);
 }
-main > div:nth-of-type(2) > div:nth-child(12),
-main > div:nth-of-type(3) > div:nth-child(12) {
+main > div:nth-of-type(3) > div:nth-child(12),
+main > div:nth-of-type(4) > div:nth-child(12) {
   transform: rotate(330deg) translateY(-15px);
 }
 
-input[type='checkbox']:checked ~ div:nth-of-type(2) > div:before,
-input[type='checkbox']:checked ~ div:nth-of-type(3) > div:before {
+input[type='checkbox']:checked ~ div:nth-of-type(3) > div:before,
+input[type='checkbox']:checked ~ div:nth-of-type(4) > div:before {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
   top: 100%;
-  height: 40px;
+  height: 5vmin;
   background-color: #f5cf52;
   animation: explosion 2s ease-in-out infinite;
 }
 
-input[type='checkbox']:checked ~ div:nth-of-type(3) > div:before {
+input[type='checkbox']:checked ~ div:nth-of-type(4) > div:before {
   background-color: #e86fdc;
   animation: explosion 2s 0.7s ease-in-out infinite;
 }
