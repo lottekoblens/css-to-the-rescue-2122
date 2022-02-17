@@ -33,7 +33,7 @@ main {
 
 /* houses */
 
-/* onderste deel huis */
+/* huis */
 main > div:nth-of-type(1) {
   position: absolute;
   bottom: 0;
