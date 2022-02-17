@@ -7,9 +7,9 @@ Mijn idee is om het vuurwerk vanaf een brug af te laten gaan. Waarbij de gebruik
 
 ## Week 2
  
-Ik heb besloten om huisjes te gaan maken in plaats van een brug. Deze huisjes wil ik dan maken met CSS. Daarbij houdt ik het zo dat de gebruiker de vuurwerkshow start wanneer ze deze aansteken met de aansteker. 
+Ik heb besloten om huisjes te gaan maken in plaats van een brug. Deze huisjes heb ik gemaakt met CSS. Daarbij houdt ik het zo dat de gebruiker de vuurwerkshow start wanneer ze deze aansteken met de aansteker. 
 
 Op dit moment heb ik dit als output.
-![Output week 2](https://github.com/lottekoblens/css-to-the-rescue-2122/blob/main/eindopdracht/images/output-week2.png)
+![Output week 2]()
 
-De code die daarbij hoort is [hier](https://github.com/lottekoblens/css-to-the-rescue-2122/tree/2fc1aa6d4ac919b43ecad4be3a9c2be0167ac8ad/eindopdracht) te vinden.
+De code die daarbij hoort is [hier]() te vinden.
