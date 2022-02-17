@@ -11,3 +11,5 @@ Ik heb besloten om huisjes te gaan maken in plaats van een brug. Deze huisjes wi
 
 Op dit moment heb ik dit als output.
 ![Output week 2](https://github.com/lottekoblens/css-to-the-rescue-2122/blob/main/eindopdracht/images/output-week2.png)
+
+De code die daarbij hoort is [hier](https://github.com/lottekoblens/css-to-the-rescue-2122/tree/2fc1aa6d4ac919b43ecad4be3a9c2be0167ac8ad/eindopdracht) te vinden.
