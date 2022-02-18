@@ -12,4 +12,4 @@ Ik heb besloten om huisjes te gaan maken in plaats van een brug. Deze huisjes he
 Op dit moment heb ik dit als output.
 ![Output week 2](https://github.com/lottekoblens/firework/blob/main/images/output-week2.gif)
 
-De code die daarbij hoort is [hier]() te vinden.
+De code die daarbij hoort is [hier](https://github.com/lottekoblens/firework/tree/7e25ad32dd8fed5ba19809d0b007007ab873ff3a) te vinden.
