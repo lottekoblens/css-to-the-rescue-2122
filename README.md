@@ -21,3 +21,7 @@ Ik heb deze week een huisje gemaakt met CSS en die heb ik gecloned met -moz-elem
 Ik heb geprobeerd een lont te maken met behulp van een clip-path. Hij staat bij onderstaande afbeelding linksboven in de hoek. Het lukte mij niet om dit mooi te krijgen en om het responsive te maken, dus heb ik besloten me meer te focussen op het aanpassen van mijn vuurwerkshow op basis van dark en light mode. De code waarmee ik de lont heb geprobeerd te maken is [hier](https://github.com/lottekoblens/firework/tree/ea8bfd307162d1b89cb57bdf4170a9a0d01844b6) te vinden.
 
 ![Lont](https://github.com/lottekoblens/firework/blob/main/images/lont-try.png)
+
+
+## Bronnen:
+* prefers-color-scheme - CSS: Cascading Style Sheets | MDN. (2021, 13 augustus). Mdn Web Docs. Geraadpleegd op 2 maart 2022, van https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
