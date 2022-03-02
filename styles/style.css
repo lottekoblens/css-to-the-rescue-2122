@@ -22,60 +22,10 @@ main {
 }
 
 /* start firework input */
-div:nth-of-type(7) {
+main > div:nth-of-type(7) {
   position: absolute;
   right: 5vmin;
   bottom: 5vmin;
-}
-
-main > div:nth-of-type(8) {
-  /* display: block; */
-  position: relative;
-  content: '';
-  clip-path: path(
-    'M222.56,37.34c-10.87,2.71-18.41,1.33-23.35-.52-6.75-2.52-8.6-5.88-16.08-7.26A33.88,33.88,0,0,0,166,31.12c-8.65,2.9-9.58,6.74-16.6,10.37a38.09,38.09,0,0,1-31.65,1c-8.89-3.89-21.13-14-19.72-25.94C98.93,9,105.36.28,112.57.5c7,.23,13.37,8.74,13.49,16.09.25,16.4-30.79,36.26-49.81,29.05-14.17-5.37-12.6-23.37-25.94-27.5C32.38,12.59,10.83,22.06.5,42v4.68C10.83,26.74,32.38,17.27,50.31,22.82,63.65,27,62.08,45,76.25,50.32c19,7.21,50.06-12.65,49.81-29-.12-7.35-6.53-15.87-13.49-16.09C105.36,5,98.93,13.66,98,21.27c-1.41,12,10.83,22.05,19.72,25.94a38.12,38.12,0,0,0,31.65-1c7-3.63,8-7.47,16.6-10.38a34,34,0,0,1,17.12-1.55c7.48,1.38,9.33,4.74,16.08,7.26,4.94,1.84,12.48,3.23,23.35.52Z'
-  );
-  /* box-shadow: 5px 5px hotpink; */
-  width: 50vmin;
-  height: 40vmin;
-  background-image: url('../images/small-rope.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box;
-  /* background: red; */
-  /* fill: red; */
-}
-
-/* div:nth-of-type(8)::after {
-  display: block;
-  content: '';
-  width: 78vmin;
-  height: 18vmin;
-  background: green;
-  clip-path: path(
-    'M.44,90.4C22.81,47.2,69.49,26.69,108.31,38.71c28.89,8.95,25.5,47.93,56.18,59.55,41.19,15.61,108.41-27.4,107.86-62.92C272.11,19.44,258.22,1,243.14.51c-15.61-.5-29.53,18.37-31.46,34.83-3.05,25.94,23.45,47.75,42.7,56.18,22.28,9.76,49.08,7.81,68.54-2.25,15.22-7.86,17.21-16.18,35.95-22.47,5.72-1.92,20-6.53,37.08-3.37,16.2,3,20.2,10.27,34.83,15.73,10.69,4,27,7,50.56,1.12'
-  );
-} */
-
-div:nth-of-type(7)::after {
-  content: '';
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  bottom: 20vmin;
-  right: 100vmin;
-  border-radius: 50%;
-  background-color: #f45f42;
-  offset-distance: 100%;
-  offset-path: path(
-    'M222.56,37.34c-10.87,2.71-18.41,1.33-23.35-.52-6.75-2.52-8.6-5.88-16.08-7.26A33.88,33.88,0,0,0,166,31.12c-8.65,2.9-9.58,6.74-16.6,10.37a38.09,38.09,0,0,1-31.65,1c-8.89-3.89-21.13-14-19.72-25.94C98.93,9,105.36.28,112.57.5c7,.23,13.37,8.74,13.49,16.09.25,16.4-30.79,36.26-49.81,29.05-14.17-5.37-12.6-23.37-25.94-27.5C32.38,12.59,10.83,22.06.5,42v4.68C10.83,26.74,32.38,17.27,50.31,22.82,63.65,27,62.08,45,76.25,50.32c19,7.21,50.06-12.65,49.81-29-.12-7.35-6.53-15.87-13.49-16.09C105.36,5,98.93,13.66,98,21.27c-1.41,12,10.83,22.05,19.72,25.94a38.12,38.12,0,0,0,31.65-1c7-3.63,8-7.47,16.6-10.38a34,34,0,0,1,17.12-1.55c7.48,1.38,9.33,4.74,16.08,7.26,4.94,1.84,12.48,3.23,23.35.52Z'
-  );
-  animation: move 6s infinite ease-in-out;
-}
-@keyframes move {
-  100% {
-    offset-distance: 0;
-  }
 }
 
 /* houses */
@@ -233,8 +183,8 @@ main > div:nth-of-type(4) > div:nth-child(12) {
   transform: rotate(330deg) translateY(-15px);
 }
 
-input[type='checkbox']:checked ~ div:nth-of-type(3) > div:before,
-input[type='checkbox']:checked ~ div:nth-of-type(4) > div:before {
+input[type='checkbox']:checked ~ div:nth-of-type(3) > div::before,
+input[type='checkbox']:checked ~ div:nth-of-type(4) > div::before {
   content: '';
   position: absolute;
   left: 0;
@@ -246,7 +196,19 @@ input[type='checkbox']:checked ~ div:nth-of-type(4) > div:before {
   animation-delay: 2s;
 }
 
-input[type='checkbox']:checked ~ div:nth-of-type(4) > div:before {
+input[type='checkbox']:checked
+  ~ div:nth-of-type(3)
+  > div:nth-child(2n)::before {
+  background-color: red;
+}
+
+input[type='checkbox']:checked
+  ~ div:nth-of-type(4)
+  > div:nth-child(2n)::before {
+  background-color: #6fe89d;
+}
+
+input[type='checkbox']:checked ~ div:nth-of-type(4) > div::before {
   background-color: #e86fdc;
   animation: explosion 2s 0.7s ease-in-out infinite;
 }
@@ -316,4 +278,27 @@ main > div:nth-of-type(6) {
 
 main > div:nth-of-type(6) {
   filter: hue-rotate(20deg);
+}
+
+@media (prefers-color-scheme: light) {
+  main {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #90dffe 0%, #38a3d1 100%);
+  }
+
+  input[type='checkbox']:checked ~ div:nth-of-type(3) > div::before {
+    background-color: #2e23cf;
+  }
+
+  input[type='checkbox']:checked ~ div:nth-of-type(4) > div::before {
+    background-color: #8b1680;
+    animation: explosion 2s 0.7s ease-in-out infinite;
+  }
+
+  input[type='checkbox']:checked
+    ~ div:nth-of-type(4)
+    > div:nth-child(2n)::before {
+    background-color: #0f6e34;
+  }
 }
