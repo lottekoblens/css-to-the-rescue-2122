@@ -255,3 +255,7 @@ main > div:nth-of-type(6) {
   background: -moz-element(#house) no-repeat;
   background-size: 100% 100%;
 }
+
+main > div:nth-of-type(6) {
+  filter: hue-rotate(20deg);
+}
