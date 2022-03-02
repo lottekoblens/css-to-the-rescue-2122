@@ -15,3 +15,9 @@ Op dit moment heb ik dit als output.
 
 De code die daarbij hoort is [hier](https://github.com/lottekoblens/firework/tree/7e25ad32dd8fed5ba19809d0b007007ab873ff3a) te vinden.
 Ik heb deze week een huisje gemaakt met CSS en die heb ik gecloned met -moz-element. Zodat ik niet nog een keer het huisje moet creëren met CSS, maar zodat ik het ene huisje wat ik heb gemaakt als het ware kan hergebruiken.
+
+## Week 3
+
+Ik heb geprobeerd een lont te maken met behulp van een clip-path. Hij staat bij onderstaande afbeelding linksboven in de hoek. Het lukte mij niet om dit mooi te krijgen en om het responsive te maken, dus heb ik besloten me meer te focussen op het aanpassen van mijn vuurwerkshow op basis van dark en light mode. De code waarmee ik de lont heb geprobeerd te maken is [hier]() te vinden.
+
+![Lont]()
