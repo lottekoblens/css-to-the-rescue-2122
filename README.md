@@ -24,4 +24,5 @@ Ik heb geprobeerd een lont te maken met behulp van een clip-path. Hij staat bij 
 
 
 ## Bronnen:
+* Van Gemert, V. (z.d.). RGB Clock. Vasilis. Geraadpleegd op 15 februari 2022, van https://vasilis.nl/rgb-clock/
 * prefers-color-scheme - CSS: Cascading Style Sheets | MDN. (2021, 13 augustus). Mdn Web Docs. Geraadpleegd op 2 maart 2022, van https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
