@@ -6,7 +6,7 @@ body {
 }
 
 body,
-input[type='checkbox'] {
+input[type='radio'] {
   cursor: url('../images/aansteker-klein.png'), auto;
 }
 
@@ -16,11 +16,11 @@ main {
   background: linear-gradient(to bottom, #010a10 30%, #0b1959 80%, #2f1107 100%);
 }
 
-input[type='checkbox'] {
+input[type='radio'] {
   display: none;
 }
 
-label {
+label:first-of-type {
   display: inline-block;
   margin: 2em;
   padding: 0.5em;
@@ -30,27 +30,31 @@ label {
   cursor: pointer;
 }
 
-label::before {
-  content: 'Start show';
+label:nth-of-type(2) {
+  display: inline-block;
+  margin: 2em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 0.02em solid white;
+  color: white;
+  cursor: pointer;
 }
 
-input[type='checkbox']:checked ~ label::before {
+label:first-of-type:before {
+  content: 'Start normal show';
+}
+
+label:nth-of-type(2):before {
+  content: 'Weird firework';
+}
+
+input[type='radio']:first-of-type:checked ~ label:first-of-type:before {
   content: 'Stop show';
 }
 
-/* input[type='checkbox']::after {
-  content: '';
-  width: 60px;
-  height: 60px;
-  background: #ebf5fc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
-    3px 3px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-} */
-
+input[type='radio']:nth-of-type(2):checked ~ label:nth-of-type(2):before {
+  content: 'Stop weird firework';
+}
 /* houses */
 
 /* house */
@@ -134,7 +138,7 @@ main > div:nth-of-type(2) > div:nth-of-type(2)::before {
   background: #d596ff;
 }
 
-/* vuurwerk 1 en 2 */
+/* firework 1 and 2 */
 main > div:nth-of-type(3) {
   position: absolute;
   left: 60vmin;
@@ -206,8 +210,8 @@ main > div:nth-of-type(4) > div:nth-child(12) {
   transform: rotate(330deg) translateY(-15px);
 }
 
-input[type='checkbox']:checked ~ div:nth-of-type(3) > div::before,
-input[type='checkbox']:checked ~ div:nth-of-type(4) > div::before {
+input[type='radio']:first-of-type:checked ~ div:nth-of-type(3) > div::before,
+input[type='radio']:first-of-type:checked ~ div:nth-of-type(4) > div::before {
   content: '';
   position: absolute;
   left: 0;
@@ -219,15 +223,15 @@ input[type='checkbox']:checked ~ div:nth-of-type(4) > div::before {
   animation-delay: 2.5s;
 }
 
-input[type='checkbox']:checked ~ div:nth-of-type(3) > div:nth-child(2n)::before {
+input[type='radio']:first-of-type:checked ~ div:nth-of-type(3) > div:nth-child(2n)::before {
   background-color: #ff0000;
 }
 
-input[type='checkbox']:checked ~ div:nth-of-type(4) > div:nth-child(2n)::before {
+input[type='radio']:first-of-type:checked ~ div:nth-of-type(4) > div:nth-child(2n)::before {
   background-color: #6fe89d;
 }
 
-input[type='checkbox']:checked ~ div:nth-of-type(4) > div::before {
+input[type='radio']:first-of-type:checked ~ div:nth-of-type(4) > div::before {
   background-color: #e86fdc;
   animation: explosion 2.5s 0.7s ease-in-out infinite;
 }
@@ -243,7 +247,7 @@ input[type='checkbox']:checked ~ div:nth-of-type(4) > div::before {
   }
 }
 
-input[type='checkbox']:checked ~ div:nth-of-type(5) {
+input[type='radio']:first-of-type:checked ~ div:nth-of-type(5) {
   animation: arrow 2.5s infinite;
 }
 
@@ -271,25 +275,105 @@ main > div:nth-of-type(5) {
   }
 }
 
+/* crazy firework */
 main > div:nth-of-type(7) {
   position: absolute;
-  left: 80vmin;
-  top: 25vmin;
-  transform: scale(0.8);
-  background: -moz-element(#firework) no-repeat;
-  background-size: 100% 100%;
+  width: 15vmin;
+  height: 15vmin;
+  top: 15vmin;
+  left: 70vmin;
+  background: linear-gradient(#33ccff, #ff0066);
+  border-radius: 50%;
+  opacity: 0;
 }
 
-input[type='checkbox']:checked ~ div:nth-of-type(7) > div::before {
+main > div:nth-of-type(8) {
+  position: absolute;
+  width: 15vmin;
+  height: 15vmin;
+  top: 20vmin;
+  left: 20vmin;
+  background: linear-gradient(#ff4b33, #ffee00);
+  border-radius: 50%;
+  opacity: 0;
+}
+
+input[type='radio']:nth-of-type(2):checked ~ div:nth-of-type(7),
+input[type='radio']:nth-of-type(2):checked ~ div:nth-of-type(8) {
+  animation: spin 0.5s linear;
+  animation-iteration-count: infinite;
+}
+
+input[type='radio']:nth-of-type(2):checked ~ div:nth-of-type(8) {
+  animation-delay: 0.6s;
+}
+
+main > div:nth-of-type(7)::after,
+main > div:nth-of-type(8)::after {
   content: '';
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 100%;
-  height: 5vmin;
-  background-color: hotpink;
-  animation: explosion 2.5s ease-in-out infinite;
-  animation-delay: 2.5s;
+  top: 1em;
+  right: 1em;
+  bottom: 1em;
+  left: 1em;
+  border-radius: 50%;
+}
+
+main > div:nth-of-type(7) span,
+main > div:nth-of-type(8) span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#33ccff, #ff0066);
+  border-radius: 50%;
+}
+
+main > div:nth-of-type(8) span {
+  background: linear-gradient(#ff4b33, #ffee00);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    transform: scale(1.3);
+  }
+  75% {
+    transform: rotate(240deg);
+  }
+  95% {
+    transform: rotate(345deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+main > div:nth-of-type(7) span:nth-child(1),
+main > div:nth-of-type(8) span:nth-child(1) {
+  filter: blur(0.05em);
+}
+
+main > div:nth-of-type(7) span:nth-child(2),
+main > div:nth-of-type(8) span:nth-child(2) {
+  filter: blur(0.3em);
+}
+
+main > div:nth-of-type(7) span:nth-child(3),
+main > div:nth-of-type(8) span:nth-child(3) {
+  filter: blur(1em);
+}
+
+main > div:nth-of-type(7) span:nth-child(4),
+main > div:nth-of-type(8) span:nth-child(4) {
+  filter: blur(3em);
 }
 
 /* second house */
@@ -306,7 +390,6 @@ main > div:nth-of-type(6) {
 main > div:nth-of-type(6) {
   filter: hue-rotate(20deg);
 }
-
 /* light mode */
 
 @media (prefers-color-scheme: light) {
@@ -349,17 +432,17 @@ main > div:nth-of-type(6) {
   }
 
   /* firework 1 */
-  input[type='checkbox']:checked ~ div:nth-of-type(3) > div::before {
+  input[type='radio']:checked ~ div:nth-of-type(3) > div::before {
     background-color: #2e23cf;
   }
 
   /* firework 2 */
-  input[type='checkbox']:checked ~ div:nth-of-type(4) > div::before {
+  input[type='radio']:checked ~ div:nth-of-type(4) > div::before {
     background-color: #8b1680;
     animation: explosion 2s 0.7s ease-in-out infinite;
   }
 
-  input[type='checkbox']:checked ~ div:nth-of-type(4) > div:nth-child(2n)::before {
+  input[type='radio']:checked ~ div:nth-of-type(4) > div:nth-child(2n)::before {
     background-color: #0f6e34;
   }
 
