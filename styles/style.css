@@ -5,8 +5,8 @@ body {
   color: white;
 }
 
-body,
-input[type='radio'] {
+input[type='radio'],
+label {
   cursor: url('../images/aansteker-klein.png'), auto;
 }
 
@@ -27,21 +27,21 @@ label:first-of-type {
   border-radius: 0.5em;
   border: 0.02em solid white;
   color: white;
-  cursor: pointer;
+  font-size: 2vmin;
 }
 
 label:nth-of-type(2) {
   display: inline-block;
-  margin: 2em;
+  margin: 0;
   padding: 0.5em;
   border-radius: 0.5em;
   border: 0.02em solid white;
   color: white;
-  cursor: pointer;
+  font-size: 2vmin;
 }
 
 label:first-of-type:before {
-  content: 'Start normal show';
+  content: 'Normal show';
 }
 
 label:nth-of-type(2):before {
@@ -49,11 +49,11 @@ label:nth-of-type(2):before {
 }
 
 input[type='radio']:first-of-type:checked ~ label:first-of-type:before {
-  content: 'Stop show';
+  content: 'Normal show playing';
 }
 
 input[type='radio']:nth-of-type(2):checked ~ label:nth-of-type(2):before {
-  content: 'Stop weird firework';
+  content: 'Weird firework playing';
 }
 /* houses */
 
@@ -142,15 +142,15 @@ main > div:nth-of-type(2) > div:nth-of-type(2)::before {
 main > div:nth-of-type(3) {
   position: absolute;
   left: 60vmin;
-  top: 15vmin;
-  transform: scale(0.8);
+  top: 25vmin;
+  transform: scale(0.7);
 }
 
 main > div:nth-of-type(4) {
   position: absolute;
   left: 30vmin;
-  top: 5vmin;
-  transform: scale(1.3);
+  top: 20vmin;
+  transform: scale(1);
 }
 
 div > div {
@@ -271,7 +271,7 @@ main > div:nth-of-type(5) {
   }
   to {
     opacity: 1;
-    transform: translate(0, -70vmin);
+    transform: translate(0, -60vmin);
   }
 }
 
@@ -397,6 +397,12 @@ main > div:nth-of-type(6) {
     background: linear-gradient(to bottom, #90dffe 0%, #38a3d1 100%);
   }
 
+  label:first-of-type,
+  label:nth-of-type(2) {
+    border: 0.02em solid black;
+    color: black;
+  }
+
   /* house */
   main > div:nth-of-type(2) {
     background: rgb(158, 92, 66);
@@ -432,22 +438,40 @@ main > div:nth-of-type(6) {
   }
 
   /* firework 1 */
-  input[type='radio']:checked ~ div:nth-of-type(3) > div::before {
+  input[type='radio']:first-of-type:checked ~ div:nth-of-type(3) > div::before {
     background-color: #2e23cf;
   }
 
   /* firework 2 */
-  input[type='radio']:checked ~ div:nth-of-type(4) > div::before {
+  input[type='radio']:first-of-type:checked ~ div:nth-of-type(4) > div::before {
     background-color: #8b1680;
     animation: explosion 2s 0.7s ease-in-out infinite;
   }
 
-  input[type='radio']:checked ~ div:nth-of-type(4) > div:nth-child(2n)::before {
+  input[type='radio']:first-of-type:checked ~ div:nth-of-type(4) > div:nth-child(2n)::before {
     background-color: #0f6e34;
   }
 
   /* fire arrow */
   main > div:nth-of-type(5) {
     background: repeating-linear-gradient(45deg, #2e23cf, #ff0000 10px, #2e23cf 10px);
+  }
+
+  /* weird firework */
+  main > div:nth-of-type(7) {
+    background: linear-gradient(#1d04fa, #ff0066);
+  }
+
+  main > div:nth-of-type(8) {
+    background: linear-gradient(#ce0056, #ff7300);
+  }
+
+  main > div:nth-of-type(7) span {
+    background: linear-gradient(#1d04fa, #ff0066);
+    border-radius: 50%;
+  }
+
+  main > div:nth-of-type(8) span {
+    background: linear-gradient(#ce0056, #ff7300);
   }
 }
