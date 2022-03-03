@@ -16,6 +16,28 @@ main {
   background: linear-gradient(to bottom, #010a10 30%, #0b1959 80%, #2f1107 100%);
 }
 
+input[type='checkbox'] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 2em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 0.02em solid white;
+  color: white;
+  cursor: pointer;
+}
+
+label::before {
+  content: 'Start show';
+}
+
+input[type='checkbox']:checked ~ label::before {
+  content: 'Stop show';
+}
+
 /* input[type='checkbox']::after {
   content: '';
   width: 60px;
