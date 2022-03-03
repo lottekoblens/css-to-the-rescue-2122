@@ -41,19 +41,19 @@ label:nth-of-type(2) {
 }
 
 label:first-of-type:before {
-  content: 'Normal firework';
+  content: attr(data-paused);
 }
 
 label:nth-of-type(2):before {
-  content: 'Weird firework';
+  content: attr(data-paused);
 }
 
 input[type='radio']:first-of-type:checked ~ label:first-of-type:before {
-  content: 'Normal firework playing';
+  content: attr(data-playing);
 }
 
 input[type='radio']:nth-of-type(2):checked ~ label:nth-of-type(2):before {
-  content: 'Weird firework playing';
+  content: attr(data-playing);
 }
 /* houses */
 
