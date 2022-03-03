@@ -17,7 +17,7 @@ main {
 }
 
 input[type='radio'] {
-  display: none;
+  display: none !important;
 }
 
 label:first-of-type {
