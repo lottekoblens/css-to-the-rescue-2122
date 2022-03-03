@@ -41,7 +41,7 @@ label:nth-of-type(2) {
 }
 
 label:first-of-type:before {
-  content: 'Normal show';
+  content: 'Normal firework';
 }
 
 label:nth-of-type(2):before {
@@ -49,7 +49,7 @@ label:nth-of-type(2):before {
 }
 
 input[type='radio']:first-of-type:checked ~ label:first-of-type:before {
-  content: 'Normal show playing';
+  content: 'Normal firework playing';
 }
 
 input[type='radio']:nth-of-type(2):checked ~ label:nth-of-type(2):before {
