@@ -24,6 +24,8 @@ Ik heb geprobeerd een lont te maken met behulp van een clip-path. Hij staat bij 
 
 Hierna ben ik gaan proberen om mijn vuurwerk opnieuw te maken maar dan met minder divs. Dus juist door meer gebruik te maken van ::before en ::after. Dit heb ik geprobeerd en ik heb er ook samen met Vasilis naar gekeken, maar ik kreeg het niet voor elkaar. De code ervan is [hier](https://github.com/lottekoblens/firework/tree/2cec869a8c828164d68dfbebe9c2c1c3f6f7f260) te vinden.
 
+Omdat het niet lukte om mijn vuurwerk te maken met minder divs, ben ik gaan proberen om mijn vuurwerk te clonen. Wederom is dit ook niet gelukt, dit komt ook omdat ik maar weinig over -moz-element kan vinden. De code hiervan vind je [hier](https://github.com/lottekoblens/firework/commit/e526571ddce3a1e6f8906964894c454986a83b02).
+
 
 ## Bronnen:
 * Van Gemert, V. (z.d.). RGB Clock. Vasilis. Geraadpleegd op 15 februari 2022, van https://vasilis.nl/rgb-clock/
