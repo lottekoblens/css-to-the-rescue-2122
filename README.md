@@ -34,6 +34,7 @@ De code waarin in het probeer, vind je [hier](https://github.com/lottekoblens/fi
 ## Bronnen:
 * Van Gemert, V. (z.d.). RGB Clock. Vasilis. Geraadpleegd op 15 februari 2022, van https://vasilis.nl/rgb-clock/
 * html css Fandom. (z.d.). -moz-element | HTML & CSS Wiki | Fandom. HTML & CSS Wiki. Geraadpleegd op 15 februari 2022, van https://htmlcss.fandom.com/wiki/-moz-element#:%7E:text=The%20CSS%20%2Dmoz%2Delement%20Mozilla,for%20background%20and%20background%2Dimage%20.
+* Walsh, D. (2014, 12 februari). Use Elements as Background Images with -moz-element. David Walsh Blog. Geraadpleegd op 15 februari 2022, van https://davidwalsh.name/moz-element
 * mdn web docs. (2022a, februari 4). clip-path - CSS: Cascading Style Sheets | MDN. Geraadpleegd op 15 februari 2022, van https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path
 * prefers-color-scheme - CSS: Cascading Style Sheets | MDN. (2021, 13 augustus). Mdn Web Docs. Geraadpleegd op 2 maart 2022, van https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
 * Marcinkiewicz, K. (z.d.). Bouncing heart (motion path). Codepen. Geraadpleegd op 2 maart 2022, van https://codepen.io/KazikM/pen/yMdxjX
