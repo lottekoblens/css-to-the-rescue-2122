@@ -266,6 +266,8 @@ main > div:nth-of-type(5) {
   opacity: 0;
   clip-path: polygon(48% 0%, 23% 17%, 23% 65%, 40% 65%, 40% 100%, 54% 100%, 54% 65%, 71% 65%, 71% 17%);
   /* use clippath to create the shape of the arrow */
+  /* source: mdn web docs. (2022a, februari 4). clip-path - CSS: Cascading Style Sheets | 
+  MDN. Geraadpleegd op 15 februari 2022, van https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path */
   width: 3vmin;
   height: 5vmin;
   background: repeating-linear-gradient(45deg, #f5cf52, #ff0000 0.2em, #f5cf52 0.2em);
@@ -368,6 +370,9 @@ main > div:nth-of-type(8) span {
 main > div:nth-of-type(7) span:nth-child(1),
 main > div:nth-of-type(8) span:nth-child(1) {
   filter: blur(0.05em);
+  /* source for filter blur: mdn web docs. (2021, 13 augustus). blur()
+   - CSS: Cascading Style Sheets | MDN. Geraadpleegd op 2 maart 2022, 
+   van https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur() */
 }
 
 main > div:nth-of-type(7) span:nth-child(2),
@@ -395,6 +400,7 @@ main > div:nth-of-type(6) {
   background: -moz-element(#house) no-repeat;
   /* with -moz-element i clone the element of the first house and give it to the background of the second house,
   this makes it possible to clone elements in firefox */
+  /* Source: Van Gemert, V. (z.d.). RGB Clock. Vasilis. Geraadpleegd op 15 februari 2022, van https://vasilis.nl/rgb-clock/ */
   background-size: 100% 100%;
 }
 
