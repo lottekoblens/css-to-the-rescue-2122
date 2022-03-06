@@ -8,6 +8,7 @@ body {
 input[type='radio'],
 label {
   cursor: url('../images/aansteker-klein.png'), auto;
+  /* change cursor to lighter when hovering over input/label */
 }
 
 main {
@@ -40,22 +41,24 @@ label:nth-of-type(2) {
   font-size: 2vmin;
 }
 
-label:first-of-type:before {
+label:first-of-type::before {
+  content: attr(data-paused);
+  /* using attr so that screan readers can read it */
+}
+
+label:nth-of-type(2)::before {
   content: attr(data-paused);
 }
 
-label:nth-of-type(2):before {
-  content: attr(data-paused);
-}
-
-input[type='radio']:first-of-type:checked ~ label:first-of-type:before {
+input[type='radio']:first-of-type:checked ~ label:first-of-type::before {
+  /* if the first radio button is checked then the before is changed to attr data-playing */
   content: attr(data-playing);
 }
 
-input[type='radio']:nth-of-type(2):checked ~ label:nth-of-type(2):before {
+input[type='radio']:nth-of-type(2):checked ~ label:nth-of-type(2)::before {
+  /* if the second radio button is checked then the before is changed to attr data-playing */
   content: attr(data-playing);
 }
-/* houses */
 
 /* house */
 main > div:nth-of-type(2) {
@@ -66,6 +69,7 @@ main > div:nth-of-type(2) {
   width: 35vmin;
   background: rgb(65, 30, 110);
   clip-path: polygon(0 50%, 50% 0, 100% 50%, 100% 100%, 0 100%, 0 50%);
+  /* using clippath to create triangle shape for the roof of the house */
 }
 
 /* schoorsteen */
@@ -77,7 +81,7 @@ main > div:nth-of-type(1) {
   height: 10vmin;
   width: 5vmin;
   background: rgb(137, 66, 196);
-  border-top: 7px solid rgba(0, 0, 0, 0.3);
+  border-top: 0.5em solid rgba(0, 0, 0, 0.3);
 }
 
 /* window */
@@ -88,6 +92,7 @@ main > div:nth-of-type(2) > div:nth-of-type(1) {
   width: 10vmin;
   background: #ecba14;
   z-index: 3;
+  /* using z-index to place the window on top of the house */
   border-top: 1vmin solid rgb(137, 66, 196);
 }
 
@@ -97,6 +102,7 @@ main > div:nth-of-type(2) > div:nth-of-type(1)::after {
   content: '';
   position: absolute;
   background: rgb(65, 30, 110);
+  /* use ::before and ::after so that i don't have to put more divs in the html, but i create divs with this in css */
 }
 
 /* ruit rechts */
@@ -104,13 +110,13 @@ main > div:nth-of-type(2) > div:nth-of-type(1)::before {
   top: 0;
   left: 50%;
   height: 100%;
-  width: 1px;
+  width: 0.1em;
 }
 
 /* ruit onder */
 main > div:nth-of-type(2) > div:nth-of-type(1)::after {
   top: 50%;
-  height: 1px;
+  height: 0.1em;
   width: 100%;
 }
 
@@ -134,7 +140,7 @@ main > div:nth-of-type(2) > div:nth-of-type(2)::before {
   height: 1vmin;
   width: 1vmin;
   border-radius: 50%;
-  border: 1px solid rgb(65, 30, 110);
+  border: 0.1em solid rgb(65, 30, 110);
   background: #d596ff;
 }
 
@@ -157,57 +163,58 @@ div > div {
   position: absolute;
   width: 0.3vmin;
   height: 10vmin;
-  transform-origin: 0% 80%;
+  transform-origin: center;
+  /* transform origin sets the origin for the transformation, so the point from witch the transformation starts */
   overflow: hidden;
 }
 
 main > div:nth-of-type(3) > div:nth-child(1),
 main > div:nth-of-type(4) > div:nth-child(1) {
-  transform: rotate(0deg) translateY(-15px);
+  transform: rotate(0deg) translateY(-0.9em);
 }
 main > div:nth-of-type(3) > div:nth-child(2),
 main > div:nth-of-type(4) > div:nth-child(2) {
-  transform: rotate(30deg) translateY(-15px);
+  transform: rotate(30deg) translateY(-0.9em);
 }
 main > div:nth-of-type(3) > div:nth-child(3),
 main > div:nth-of-type(4) > div:nth-child(3) {
-  transform: rotate(60deg) translateY(-15px);
+  transform: rotate(60deg) translateY(-0.9em);
 }
 main > div:nth-of-type(3) > div:nth-child(4),
 main > div:nth-of-type(4) > div:nth-child(4) {
-  transform: rotate(90deg) translateY(-15px);
+  transform: rotate(90deg) translateY(-0.9em);
 }
 main > div:nth-of-type(3) > div:nth-child(5),
 main > div:nth-of-type(4) > div:nth-child(5) {
-  transform: rotate(120deg) translateY(-15px);
+  transform: rotate(120deg) translateY(-0.9em);
 }
 main > div:nth-of-type(3) > div:nth-child(6),
 main > div:nth-of-type(4) > div:nth-child(6) {
-  transform: rotate(150deg) translateY(-15px);
+  transform: rotate(150deg) translateY(-0.9em);
 }
 main > div:nth-of-type(3) > div:nth-child(7),
 main > div:nth-of-type(4) > div:nth-child(7) {
-  transform: rotate(180deg) translateY(-15px);
+  transform: rotate(180deg) translateY(-0.9em);
 }
 main > div:nth-of-type(3) > div:nth-child(8),
 main > div:nth-of-type(4) > div:nth-child(8) {
-  transform: rotate(210deg) translateY(-15px);
+  transform: rotate(210deg) translateY(-0.9em);
 }
 main > div:nth-of-type(3) > div:nth-child(9),
 main > div:nth-of-type(4) > div:nth-child(9) {
-  transform: rotate(240deg) translateY(-15px);
+  transform: rotate(240deg) translateY(-0.9em);
 }
 main > div:nth-of-type(3) > div:nth-child(10),
 main > div:nth-of-type(4) > div:nth-child(10) {
-  transform: rotate(270deg) translateY(-15px);
+  transform: rotate(270deg) translateY(-0.9em);
 }
 main > div:nth-of-type(3) > div:nth-child(11),
 main > div:nth-of-type(4) > div:nth-child(11) {
-  transform: rotate(300deg) translateY(-15px);
+  transform: rotate(300deg) translateY(-0.9em);
 }
 main > div:nth-of-type(3) > div:nth-child(12),
 main > div:nth-of-type(4) > div:nth-child(12) {
-  transform: rotate(330deg) translateY(-15px);
+  transform: rotate(330deg) translateY(-0.9em);
 }
 
 input[type='radio']:first-of-type:checked ~ div:nth-of-type(3) > div::before,
@@ -234,12 +241,12 @@ input[type='radio']:first-of-type:checked ~ div:nth-of-type(4) > div:nth-child(2
 input[type='radio']:first-of-type:checked ~ div:nth-of-type(4) > div::before {
   background-color: #e86fdc;
   animation: explosion 2.5s 0.7s ease-in-out infinite;
+  /* play animation explosion for 2.5s after a delay of 0.7s; */
 }
 
 @keyframes explosion {
   0% {
     top: 100%;
-    rotate: 45deg;
   }
   33%,
   100% {
@@ -258,9 +265,11 @@ main > div:nth-of-type(5) {
   left: 59vmin;
   opacity: 0;
   clip-path: polygon(48% 0%, 23% 17%, 23% 65%, 40% 65%, 40% 100%, 54% 100%, 54% 65%, 71% 65%, 71% 17%);
+  /* use clippath to create the shape of the arrow */
   width: 3vmin;
   height: 5vmin;
-  background: repeating-linear-gradient(45deg, #f5cf52, #ff0000 10px, #f5cf52 10px);
+  background: repeating-linear-gradient(45deg, #f5cf52, #ff0000 0.2em, #f5cf52 0.2em);
+  /* repeat the linear gradient */
   transform: scale(1.3);
   opacity: 0;
 }
@@ -384,15 +393,20 @@ main > div:nth-of-type(6) {
   bottom: 0;
   left: 50vmin;
   background: -moz-element(#house) no-repeat;
+  /* with -moz-element i clone the element of the first house and give it to the background of the second house,
+  this makes it possible to clone elements in firefox */
   background-size: 100% 100%;
 }
 
 main > div:nth-of-type(6) {
   filter: hue-rotate(20deg);
+  /* change the hue with 20deg */
 }
+
 /* light mode */
 
 @media (prefers-color-scheme: light) {
+  /* when the user has it's computer in light mode the colors of the elements below will change */
   main {
     background: linear-gradient(to bottom, #90dffe 0%, #38a3d1 100%);
   }
@@ -426,13 +440,6 @@ main > div:nth-of-type(6) {
 
   /* door knob */
   main > div:nth-of-type(2) > div:nth-of-type(2)::before {
-    content: '';
-    position: absolute;
-    top: 10vmin;
-    right: 2vmin;
-    height: 1vmin;
-    width: 1vmin;
-    border-radius: 50%;
     border: 1px solid rgb(65, 30, 110);
     background: rgb(189, 129, 106);
   }
@@ -457,7 +464,7 @@ main > div:nth-of-type(6) {
     background: repeating-linear-gradient(45deg, #2e23cf, #ff0000 10px, #2e23cf 10px);
   }
 
-  /* weird firework */
+  /* crazy firework */
   main > div:nth-of-type(7) {
     background: linear-gradient(#1d04fa, #ff0066);
   }
