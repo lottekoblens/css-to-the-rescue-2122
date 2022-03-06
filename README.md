@@ -34,6 +34,7 @@ Ik ben nog verder gaan experimenteren met ander vuurwerk en heb hierbij radio bu
 
 ![Output week 3](https://github.com/lottekoblens/firework/blob/main/images/output-week3.gif)
 
+Naar aanleiding van het feedback gesprek in week 3 heb ik besloten dat ik de radio buttons nog wat aantrekkelijker wil maken, door er bijvoorbeeld een bepaalde vorm van te maken. Dit wil ik gaan doen met box-shadows. Hier heb ik nog geen ervaring mee, maar het lijkt me leuk om daar iets mee te gaan maken.
 
 ## Bronnen:
 * Van Gemert, V. (z.d.). RGB Clock. Vasilis. Geraadpleegd op 15 februari 2022, van https://vasilis.nl/rgb-clock/
