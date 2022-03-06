@@ -30,6 +30,10 @@ Omdat het niet lukte om mijn vuurwerk te maken met minder divs, ben ik gaan prob
 
 De code waarin in het probeer, vind je [hier](https://github.com/lottekoblens/firework/commit/e526571ddce3a1e6f8906964894c454986a83b02).
 
+Ik ben nog verder gaan experimenteren met ander vuurwerk en heb hierbij radio buttons gebruikt om het verschillende vuurwerk te kunnen starten. 
+
+![Output week 3]()
+
 
 ## Bronnen:
 * Van Gemert, V. (z.d.). RGB Clock. Vasilis. Geraadpleegd op 15 februari 2022, van https://vasilis.nl/rgb-clock/
