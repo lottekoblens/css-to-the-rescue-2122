@@ -1,13 +1,15 @@
 # The firework show
 
+De vuurwerk show kunt u het best bekijken in FireFox, omdat ik gebruik heb gemaakt van -moz-element en dit werkt alleen in FireFox.
+
 ## Week 1
 
 Ik heb gekozen voor de vuurwerkshow als eindopdracht. Hierbij ligt bij mij eigenlijk de uitdaging al bij het animeren. Ik heb hier nog maar weinig ervaring mee en zal daar dan ook nog veel over moeten leren.
-Mijn idee is om het vuurwerk vanaf een brug af te laten gaan. Waarbij de gebruiker de vuurwerkshow begint als hij/zij op een aansteker klikt en men dus het vlammetje van de aansteker zal zien.
+Mijn idee is om het vuurwerk vanaf een brug af te laten gaan. Waarbij de gebruiker de vuurwerkshow begint als hij/zij het vuurwerk aansteekt met een aansteker.
 
 ## Week 2
  
-Ik heb besloten om huisjes te gaan maken in plaats van een brug. Deze huisjes heb ik gemaakt met CSS. Daarbij houdt ik het zo dat de gebruiker de vuurwerkshow start wanneer ze deze aansteken met de aansteker. 
+Ik heb besloten om huisjes te gaan maken in plaats van een brug. Deze huisjes heb ik gemaakt met clip-path. Door gebruik te maken van clip-path kan ik de vorm van het dak creëren. Ik vond het eerst wel lastig om te begrijpen hoe een clip-path werkt en heb veel gekeken naar hoe dit in een clip-path generator wordt gedaan en daarna ben ik er zelf mee gaan oefenen en heb ik mijn huisje kunnen creëren.
 
 Op dit moment heb ik dit als output.
 
@@ -29,6 +31,7 @@ Omdat het niet lukte om mijn vuurwerk te maken met minder divs, ben ik gaan prob
 
 ## Bronnen:
 * Van Gemert, V. (z.d.). RGB Clock. Vasilis. Geraadpleegd op 15 februari 2022, van https://vasilis.nl/rgb-clock/
+* mdn web docs. (2022a, februari 4). clip-path - CSS: Cascading Style Sheets | MDN. Geraadpleegd op 15 februari 2022, van https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path
 * prefers-color-scheme - CSS: Cascading Style Sheets | MDN. (2021, 13 augustus). Mdn Web Docs. Geraadpleegd op 2 maart 2022, van https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
 * Marcinkiewicz, K. (z.d.). Bouncing heart (motion path). Codepen. Geraadpleegd op 2 maart 2022, van https://codepen.io/KazikM/pen/yMdxjX
 * mdn web docs. (2022, 5 februari). path() - CSS: Cascading Style Sheets | MDN. Geraadpleegd op 2 maart 2022, van https://developer.mozilla.org/en-US/docs/Web/CSS/path()
