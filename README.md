@@ -32,7 +32,7 @@ De code waarin in het probeer, vind je [hier](https://github.com/lottekoblens/fi
 
 Ik ben nog verder gaan experimenteren met ander vuurwerk en heb hierbij radio buttons gebruikt om het verschillende vuurwerk te kunnen starten. 
 
-![Output week 3]()
+![Output week 3](https://github.com/lottekoblens/firework/blob/main/images/output-week3.gif)
 
 
 ## Bronnen:
