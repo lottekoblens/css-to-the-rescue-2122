@@ -2,7 +2,7 @@
 
 A firework show created with HTML and CSS. (Works in FireFox)
 
-## :bookmark_tabs: Table of contents
+## :clipboard: Table of contents
 
 ## :bulb: Concept
 
@@ -28,6 +28,6 @@ If you want to work on this project yourself, you can clone this repository by t
 * Marcinkiewicz, K. (z.d.). Bouncing heart (motion path). Codepen. Geraadpleegd op 2 maart 2022, van https://codepen.io/KazikM/pen/yMdxjX
 * mdn web docs. (2022, 5 februari). path() - CSS: Cascading Style Sheets | MDN. Geraadpleegd op 2 maart 2022, van https://developer.mozilla.org/en-US/docs/Web/CSS/path()
 
-## License
+## :bookmark: License
 
 This repository has the [MIT](https://github.com/lottekoblens/firework/blob/main/LICENSE) license
