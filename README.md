@@ -3,6 +3,11 @@
 A firework show created with HTML and CSS. (Works in FireFox)
 
 ## :clipboard: Table of contents
+* [Concept](https://github.com/lottekoblens/firework#bulb-concept)
+* [Process]()
+* [Installation]()
+* [Resources]()
+* [License]()
 
 ## :bulb: Concept
 
