@@ -6,6 +6,8 @@ A firework show created with HTML and CSS. (Works in FireFox)
 
 ## Concept
 
+I created a fireworks show where the user starts the show by lighting it with the lighter. The user can choose two different shows. The first show consists of fireworks as we all know it. The second show consists of fireworks that we don't know yet, but that do look very cool. I also made the background and the houses with CSS techniques that are new to me, such as clip-path and -moz-element.
+
 ## Process
 
 If you want to know more about my process, you can go [here](https://github.com/lottekoblens/firework/wiki/Proces).
