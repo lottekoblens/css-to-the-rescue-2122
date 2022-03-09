@@ -2,6 +2,8 @@
 
 A firework show created with HTML and CSS. (Works in FireFox)
 
+<img src="https://github.com/lottekoblens/firework/blob/main/images/Vuurwerkshow.gif" width="600">
+
 ## :clipboard: Table of contents
 * [Concept](https://github.com/lottekoblens/firework#bulb-concept)
 * [Process](https://github.com/lottekoblens/firework#chart_with_upwards_trend-process)
