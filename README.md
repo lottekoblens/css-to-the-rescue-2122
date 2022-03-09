@@ -12,6 +12,12 @@ I created a fireworks show where the user starts the show by lighting it with th
 
 If you want to know more about my process, you can go [here](https://github.com/lottekoblens/firework/wiki/Proces).
 
+## Installation
+
+If you want to work on this project yourself, you can clone this repository by typing in the following in your terminal:
+
+``` git clone ```
+
 ## Resources:
 * Van Gemert, V. (z.d.). RGB Clock. Vasilis. Geraadpleegd op 15 februari 2022, van https://vasilis.nl/rgb-clock/
 * html css Fandom. (z.d.). -moz-element | HTML & CSS Wiki | Fandom. HTML & CSS Wiki. Geraadpleegd op 15 februari 2022, van https://htmlcss.fandom.com/wiki/-moz-element#:%7E:text=The%20CSS%20%2Dmoz%2Delement%20Mozilla,for%20background%20and%20background%2Dimage%20.
