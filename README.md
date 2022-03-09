@@ -16,7 +16,7 @@ If you want to know more about my process, you can go [here](https://github.com/
 
 If you want to work on this project yourself, you can clone this repository by typing in the following in your terminal:
 
-``` git clone ```
+``` git clone https://github.com/lottekoblens/firework.git```
 
 ## Resources:
 * Van Gemert, V. (z.d.). RGB Clock. Vasilis. Geraadpleegd op 15 februari 2022, van https://vasilis.nl/rgb-clock/
