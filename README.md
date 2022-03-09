@@ -30,4 +30,4 @@ If you want to work on this project yourself, you can clone this repository by t
 
 ## License
 
-This repository has the [MIT]() license
+This repository has the [MIT](https://github.com/lottekoblens/firework/blob/main/LICENSE) license
