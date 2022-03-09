@@ -2,41 +2,15 @@
 
 A firework show created with HTML and CSS. (Works in FireFox)
 
-## Week 1
+## Table of contents
 
-Ik heb gekozen voor de vuurwerkshow als eindopdracht. Hierbij ligt bij mij eigenlijk de uitdaging al bij het animeren. Ik heb hier nog maar weinig ervaring mee en zal daar dan ook nog veel over moeten leren.
-Mijn idee is om het vuurwerk vanaf een brug af te laten gaan. Waarbij de gebruiker de vuurwerkshow begint als hij/zij het vuurwerk aansteekt met een aansteker.
+## Concept
 
-## Week 2
- 
-Ik heb besloten om huisjes te gaan maken in plaats van een brug. Deze huisjes heb ik gemaakt met clip-path. Door gebruik te maken van clip-path kan ik de vorm van het dak creëren. Ik vond het eerst wel lastig om te begrijpen hoe een clip-path werkt en heb veel gekeken naar hoe dit in een clip-path generator wordt gedaan en daarna ben ik er zelf mee gaan oefenen en heb ik mijn huisje kunnen creëren.
+## Process
 
-Op dit moment heb ik dit als output.
+If you want to know more about my process, you can go [here]().
 
-![Output week 2](https://github.com/lottekoblens/firework/blob/main/images/output-week2.gif)
-
-De code die daarbij hoort is [hier](https://github.com/lottekoblens/firework/tree/7e25ad32dd8fed5ba19809d0b007007ab873ff3a) te vinden.
-Ik heb deze week een huisje gemaakt met CSS en die heb ik gecloned met -moz-element. Zodat ik niet nog een keer het huisje moet creëren met CSS, maar zodat ik het ene huisje wat ik heb gemaakt als het ware kan hergebruiken.
-
-## Week 3
-
-Ik heb geprobeerd een lont te maken met behulp van een clip-path. Hij staat bij onderstaande afbeelding linksboven in de hoek. Het lukte mij niet om dit mooi te krijgen en om het responsive te maken, dus heb ik besloten me meer te focussen op het aanpassen van mijn vuurwerkshow op basis van dark en light mode. De code waarmee ik de lont heb geprobeerd te maken is [hier](https://github.com/lottekoblens/firework/tree/ea8bfd307162d1b89cb57bdf4170a9a0d01844b6) te vinden.
-
-![Lont](https://github.com/lottekoblens/firework/blob/main/images/lont-try.png)
-
-Hierna ben ik gaan proberen om mijn vuurwerk opnieuw te maken maar dan met minder divs. Dus juist door meer gebruik te maken van ::before en ::after. Dit heb ik geprobeerd en ik heb er ook samen met Vasilis naar gekeken, maar ik kreeg het niet voor elkaar. De code ervan is [hier](https://github.com/lottekoblens/firework/tree/2cec869a8c828164d68dfbebe9c2c1c3f6f7f260) te vinden.
-
-Omdat het niet lukte om mijn vuurwerk te maken met minder divs, ben ik gaan proberen om mijn vuurwerk te clonen. Wederom is dit ook niet gelukt, dit komt ook omdat ik maar weinig over -moz-element kan vinden. Het lijkt erop dat het -moz-element niet goed werkt wanneer ergens een transform op zit. Op mijn vuurwerk zit dit wel en daarom denk ik dat het niet kan gaan werken, maar dit weet ik dus niet zeker omdat ik er niet voldoende van kan vinden op internet.
-
-De code waarin in het probeer, vind je [hier](https://github.com/lottekoblens/firework/commit/e526571ddce3a1e6f8906964894c454986a83b02).
-
-Ik ben nog verder gaan experimenteren met ander vuurwerk en heb hierbij radio buttons gebruikt om het verschillende vuurwerk te kunnen starten. 
-
-![Output week 3](https://github.com/lottekoblens/firework/blob/main/images/output-week3.gif)
-
-Naar aanleiding van het feedback gesprek in week 3 heb ik besloten dat ik de radio buttons nog wat aantrekkelijker wil maken, door er bijvoorbeeld een bepaalde vorm van te maken. Dit wil ik gaan doen met box-shadows. Hier heb ik nog geen ervaring mee, maar het lijkt me leuk om daar iets mee te gaan maken.
-
-## Bronnen:
+## Resources:
 * Van Gemert, V. (z.d.). RGB Clock. Vasilis. Geraadpleegd op 15 februari 2022, van https://vasilis.nl/rgb-clock/
 * html css Fandom. (z.d.). -moz-element | HTML & CSS Wiki | Fandom. HTML & CSS Wiki. Geraadpleegd op 15 februari 2022, van https://htmlcss.fandom.com/wiki/-moz-element#:%7E:text=The%20CSS%20%2Dmoz%2Delement%20Mozilla,for%20background%20and%20background%2Dimage%20.
 * Walsh, D. (2014, 12 februari). Use Elements as Background Images with -moz-element. David Walsh Blog. Geraadpleegd op 15 februari 2022, van https://davidwalsh.name/moz-element
