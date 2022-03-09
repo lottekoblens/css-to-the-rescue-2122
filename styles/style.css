@@ -70,12 +70,11 @@ label:nth-of-type(2) {
   background: linear-gradient(#33ccff, #ff0066);
   filter: blur(0.02em);
   box-shadow: 0 0 15px white;
-  /* #33ccff, #ff0066 */
 }
 
 label:nth-of-type(3) {
   position: absolute;
-  top: 8vmin;
+  top: 7vmin;
   left: 35vmin;
   font-family: 'Fireworks';
   display: inline-block;
@@ -84,9 +83,8 @@ label:nth-of-type(3) {
   border-radius: 0.5em;
   border: none;
   color: rgb(255, 0, 191);
-  font-size: 5vmin;
+  font-size: 7vmin;
   background: none;
-  /* #33ccff, #ff0066 */
 }
 
 /* house */
@@ -422,8 +420,8 @@ main > div:nth-of-type(8) span:nth-child(4) {
 /* second house */
 main > div:nth-of-type(6) {
   position: absolute;
-  height: 45vmin;
-  width: 35vmin;
+  height: 50vmin;
+  width: 38vmin;
   bottom: 0;
   left: 50vmin;
   background: -moz-element(#house) no-repeat;
@@ -438,6 +436,7 @@ main > div:nth-of-type(6) {
   /* change the hue with 20deg */
 }
 
+/* font firework */
 main > div:nth-of-type(9) {
   position: absolute;
   top: 10vmin;
@@ -447,7 +446,7 @@ main > div:nth-of-type(9) {
 
 main > div:nth-of-type(9) > p:nth-of-type(1) {
   position: absolute;
-  top: 18vmin;
+  top: 8vmin;
   font-size: 8vmin;
   color: rgb(255, 0, 191);
   opacity: 0;
@@ -464,8 +463,8 @@ main > div:nth-of-type(9) > p:nth-of-type(2) {
 
 main > div:nth-of-type(9) > p:nth-of-type(3) {
   position: absolute;
-  top: 12vmin;
-  left: 20vmin;
+  top: 15vmin;
+  left: 25vmin;
   font-size: 7vmin;
   color: rgb(30, 255, 0);
   opacity: 0;
@@ -474,6 +473,14 @@ main > div:nth-of-type(9) > p:nth-of-type(3) {
 input[type='radio']:nth-of-type(3):checked ~ div:nth-of-type(9) > p {
   animation: fontFirework 1.5s linear;
   animation-iteration-count: infinite;
+}
+
+input[type='radio']:nth-of-type(3):checked ~ div:nth-of-type(9) > p:nth-of-type(2) {
+  animation-delay: 1s;
+}
+
+input[type='radio']:nth-of-type(3):checked ~ div:nth-of-type(9) > p:nth-of-type(3) {
+  animation-delay: 0.5s;
 }
 
 @keyframes fontFirework {
@@ -493,14 +500,6 @@ input[type='radio']:nth-of-type(3):checked ~ div:nth-of-type(9) > p {
   100% {
     opacity: 0;
   }
-  /* from {
-    opacity: 1;
-    transform: scale(1);
-    transform: rotate(45deg);
-  }
-  to {
-    transform: scale(3);
-  } */
 }
 
 /* light mode */
@@ -511,10 +510,24 @@ input[type='radio']:nth-of-type(3):checked ~ div:nth-of-type(9) > p {
     background: linear-gradient(to bottom, #90dffe 0%, #38a3d1 100%);
   }
 
-  label:first-of-type,
-  label:nth-of-type(2) {
-    border: 0.02em solid black;
+  h1 {
     color: black;
+  }
+
+  label:first-of-type {
+    box-shadow: -0.6em -0.5em red, -1em -1em red, -1.5em -1.5em red, -2em -2em red, -2.3em -2.3em red, 0em -0.5em #2e23cf, 0.1em -1.1em #2e23cf,
+      0.2em -1.7em #2e23cf, 0.3em -2.3em #2e23cf, 0.4em -2.9em #2e23cf, 0.5em 0em red, 1.1em -0.2em red, 1.7em -0.5em red, 2.4em -0.8em red,
+      3em -1.05em red, 0.5em 0.4em #2e23cf, 0.8em 0.8em #2e23cf, 1.3em 1.3em #2e23cf, 1.8em 1.8em #2e23cf, 2.2em 2.2em #2e23cf, 0.1em 0.8em red,
+      -0.2em 1.2em red, -0.3em 1.6em red, -0.5em 2.2em red, -0.7em 2.8em red, -0.5em 0.4em #2e23cf, -1.1em 0.4em #2e23cf, -1.5em 0.6em #2e23cf,
+      -2em 0.8em #2e23cf, -2.5em 1em #2e23cf;
+  }
+
+  label:nth-of-type(2) {
+    border: 0.02em solid rgb(16, 90, 187);
+    color: rgb(16, 90, 187);
+    background: linear-gradient(#33ccff, #ff0066);
+    box-shadow: 0 0 15px rgb(16, 90, 187);
+    /* #33ccff, #ff0066 */
   }
 
   /* house */
@@ -580,5 +593,14 @@ input[type='radio']:nth-of-type(3):checked ~ div:nth-of-type(9) > p {
 
   main > div:nth-of-type(8) span {
     background: linear-gradient(#ce0056, #ff7300);
+  }
+
+  /* font firework */
+  main > div:nth-of-type(9) > p:nth-of-type(2) {
+    color: rgb(0, 81, 255);
+  }
+
+  main > div:nth-of-type(9) > p:nth-of-type(3) {
+    color: rgb(24, 134, 57);
   }
 }
