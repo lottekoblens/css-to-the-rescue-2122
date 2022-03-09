@@ -16,7 +16,7 @@ A firework show created with HTML and CSS. (Works in FireFox)
 I created a fireworks show where the user starts the show by lighting it with the lighter. The user can choose two different shows. The first show consists of fireworks as we all know it. The second show consists of fireworks that we don't know yet, but that do look very cool. I also made the background and the houses with CSS techniques that are new to me, such as clip-path and -moz-element.
 
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/lottekoblens/foodchecker/blob/main/images/home.png) |  ![](https://github.com/lottekoblens/foodchecker/blob/main/images/scan-page.png) | ![](https://github.com/lottekoblens/foodchecker/blob/main/images/product.png) | ![](https://github.com/lottekoblens/foodchecker/blob/main/images/product.png)
+![](https://github.com/lottekoblens/firework/blob/main/images/concept1.png) |  ![](https://github.com/lottekoblens/firework/blob/main/images/concept2.png) | ![](https://github.com/lottekoblens/firework/blob/main/images/concept3.png) | ![](https://github.com/lottekoblens/firework/blob/main/images/concept4.png)
 
 ## :chart_with_upwards_trend: Process
 
