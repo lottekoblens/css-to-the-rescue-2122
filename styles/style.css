@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Flames';
+  src: url('../charbb_reg.otf') format('opentype'), url('../charbb_reg.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Fireworks';
+  src: url('../Shapes.otf') format('opentype');
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,6 +19,7 @@ h1 {
   margin: 0;
   font-size: 3.5vmin;
   padding: 0.5em;
+  font-family: 'Flames', monospace;
 }
 
 input[type='radio'],
@@ -50,31 +61,32 @@ label:nth-of-type(2) {
   top: 8vmin;
   left: 20vmin;
   display: inline-block;
-  margin: 2em;
+  margin: 0;
   padding: 0.5em;
   border-radius: 0.5em;
   border: 0.02em solid white;
   color: white;
-  font-size: 1vmin;
+  font-size: 5vmin;
+  background: linear-gradient(#33ccff, #ff0066);
+  filter: blur(0.02em);
+  box-shadow: 0 0 15px white;
+  /* #33ccff, #ff0066 */
 }
 
-label:first-of-type::before {
-  content: attr(data-paused);
-  /* using attr so that screan readers can read it */
-}
-
-label:nth-of-type(2)::before {
-  content: attr(data-paused);
-}
-
-input[type='radio']:first-of-type:checked ~ label:first-of-type::before {
-  /* if the first radio button is checked then the before is changed to attr data-playing */
-  content: attr(data-playing);
-}
-
-input[type='radio']:nth-of-type(2):checked ~ label:nth-of-type(2)::before {
-  /* if the second radio button is checked then the before is changed to attr data-playing */
-  content: attr(data-playing);
+label:nth-of-type(3) {
+  position: absolute;
+  top: 8vmin;
+  left: 35vmin;
+  font-family: 'Fireworks';
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border-radius: 0.5em;
+  border: none;
+  color: rgb(255, 0, 191);
+  font-size: 5vmin;
+  background: none;
+  /* #33ccff, #ff0066 */
 }
 
 /* house */
@@ -424,6 +436,71 @@ main > div:nth-of-type(6) {
 main > div:nth-of-type(6) {
   filter: hue-rotate(20deg);
   /* change the hue with 20deg */
+}
+
+main > div:nth-of-type(9) {
+  position: absolute;
+  top: 10vmin;
+  left: 20vmin;
+  font-family: 'Fireworks';
+}
+
+main > div:nth-of-type(9) > p:nth-of-type(1) {
+  position: absolute;
+  top: 18vmin;
+  font-size: 8vmin;
+  color: rgb(255, 0, 191);
+  opacity: 0;
+}
+
+main > div:nth-of-type(9) > p:nth-of-type(2) {
+  position: absolute;
+  top: 10vmin;
+  left: 50vmin;
+  font-size: 7vmin;
+  color: rgb(0, 247, 255);
+  opacity: 0;
+}
+
+main > div:nth-of-type(9) > p:nth-of-type(3) {
+  position: absolute;
+  top: 12vmin;
+  left: 20vmin;
+  font-size: 7vmin;
+  color: rgb(30, 255, 0);
+  opacity: 0;
+}
+
+input[type='radio']:nth-of-type(3):checked ~ div:nth-of-type(9) > p {
+  animation: fontFirework 1.5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fontFirework {
+  0% {
+    opacity: 1;
+    transform: scale(4);
+  }
+  25% {
+    transform: scale(2);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+  }
+  /* from {
+    opacity: 1;
+    transform: scale(1);
+    transform: rotate(45deg);
+  }
+  to {
+    transform: scale(3);
+  } */
 }
 
 /* light mode */
