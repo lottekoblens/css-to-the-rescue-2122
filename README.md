@@ -1,6 +1,6 @@
 # The firework show
 
-De vuurwerk show kunt u het best bekijken in FireFox, omdat ik gebruik heb gemaakt van -moz-element en dit werkt alleen in FireFox.
+A firework show created with HTML and CSS. (Works in FireFox)
 
 ## Week 1
 
