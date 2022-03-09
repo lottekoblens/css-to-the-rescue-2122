@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Flames';
-  src: url('../charbb_reg.otf') format('opentype'), url('../charbb_reg.ttf') format('truetype');
+  src: url('../fonts/charbb_reg.otf') format('opentype'), url('../charbb_reg.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Fireworks';
-  src: url('../Shapes.otf') format('opentype');
+  src: url('../fonts/Shapes.otf') format('opentype');
 }
 
 body {
