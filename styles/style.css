@@ -5,6 +5,12 @@ body {
   color: white;
 }
 
+h1 {
+  margin: 0;
+  font-size: 3.5vmin;
+  padding: 0.5em;
+}
+
 input[type='radio'],
 label {
   cursor: url('../images/aansteker-klein.png'), auto;
@@ -24,30 +30,32 @@ input[type='radio'] {
 label:first-of-type {
   position: absolute;
   display: inline-block;
-  top: 5vmin;
-  left: 10vmin;
+  top: 8vmin;
+  left: 5vmin;
   margin: 2em;
   padding: 0.5em;
   border-radius: 50%;
   border: 0.02em solid white;
   color: white;
   font-size: 1vmin;
-  box-shadow: -0.6em -0.5em red, -1em -1em red, -1.5em -1.5em red, -2em -2em red, -2.5em -2.5em red, 0em -0.5em yellow, 0.1em -1.1em yellow,
-    0.2em -1.7em yellow, 0.3em -2.3em yellow, 0.4em -2.9em yellow, 0.4em 0.2em red, 1.2em 0em red, 1.7em -0.3em red, 2.4em -0.75em red,
-    2.9em -1.1em red;
+  box-shadow: -0.6em -0.5em red, -1em -1em red, -1.5em -1.5em red, -2em -2em red, -2.3em -2.3em red, 0em -0.5em yellow, 0.1em -1.1em yellow,
+    0.2em -1.7em yellow, 0.3em -2.3em yellow, 0.4em -2.9em yellow, 0.5em 0em red, 1.1em -0.2em red, 1.7em -0.5em red, 2.4em -0.8em red,
+    3em -1.05em red, 0.5em 0.4em yellow, 0.8em 0.8em yellow, 1.3em 1.3em yellow, 1.8em 1.8em yellow, 2.2em 2.2em yellow, 0.1em 0.8em red,
+    -0.2em 1.2em red, -0.3em 1.6em red, -0.5em 2.2em red, -0.7em 2.8em red, -0.5em 0.4em yellow, -1.1em 0.4em yellow, -1.5em 0.6em yellow,
+    -2em 0.8em yellow, -2.5em 1em yellow;
 }
 
 label:nth-of-type(2) {
   position: absolute;
-  top: 5vmin;
-  left: 30vmin;
+  top: 8vmin;
+  left: 20vmin;
   display: inline-block;
-  margin: 0;
+  margin: 2em;
   padding: 0.5em;
   border-radius: 0.5em;
   border: 0.02em solid white;
   color: white;
-  font-size: 2vmin;
+  font-size: 1vmin;
 }
 
 label:first-of-type::before {
