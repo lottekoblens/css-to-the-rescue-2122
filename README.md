@@ -5,7 +5,7 @@ A firework show created with HTML and CSS. (Works in FireFox)
 ## :clipboard: Table of contents
 * [Concept](https://github.com/lottekoblens/firework#bulb-concept)
 * [Process](https://github.com/lottekoblens/firework#chart_with_upwards_trend-process)
-* [Installation]()
+* [Installation](https://github.com/lottekoblens/firework#wrench-installation)
 * [Resources]()
 * [License]()
 
