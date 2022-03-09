@@ -27,3 +27,7 @@ If you want to work on this project yourself, you can clone this repository by t
 * prefers-color-scheme - CSS: Cascading Style Sheets | MDN. (2021, 13 augustus). Mdn Web Docs. Geraadpleegd op 2 maart 2022, van https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
 * Marcinkiewicz, K. (z.d.). Bouncing heart (motion path). Codepen. Geraadpleegd op 2 maart 2022, van https://codepen.io/KazikM/pen/yMdxjX
 * mdn web docs. (2022, 5 februari). path() - CSS: Cascading Style Sheets | MDN. Geraadpleegd op 2 maart 2022, van https://developer.mozilla.org/en-US/docs/Web/CSS/path()
+
+## License
+
+This repository has the [MIT]() license
