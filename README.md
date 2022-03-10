@@ -23,6 +23,10 @@ Firework crazy | Firework normal | Firework Font | Light mode
 
 If you want to know more about my process, you can go [here](https://github.com/lottekoblens/firework/wiki/Proces).
 
+## 💻 Live demo
+
+[Demo](https://lottekoblens.github.io/firework/)
+
 ## :wrench: Installation
 
 If you want to work on this project yourself, you can clone this repository by typing in the following in your terminal:
